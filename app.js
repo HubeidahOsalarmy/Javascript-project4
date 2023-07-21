@@ -17,5 +17,5 @@ const calculate = (btnValue) => {
 };
 
 buttons.forEach((button) => {
-button.addEventListener("click", (e) => console.log((e.target.dataset.value)));
+button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });

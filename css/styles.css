@@ -6,7 +6,8 @@ body {
   padding: 0;
   margin: 0;
   border-radius: 10px;
-  background-color: rgb(115, 101, 244);
+  background-color: white;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,35 +15,52 @@ body {
 
 .container {
     max-width: 400px;
-  background-color: white;
+  background-color: rgb(244, 101, 187);
+
   border-radius: 20px;
   padding: 10px 20px 20px;
   align-items: center;
   justify-content: center;
   margin-top: 150px;
+  height: 65vh;
 }
 .buttons {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
 }
+.operator{
+    color: rgb(244, 29, 65);
+}
+button{
+    grid-column: span 1;
+    cursor: pointer;
+    border-radius: 20%;
+    font-size: 35px;
+    border: 2px black dashed;
+}
 .display {
     background-color: rgb(232, 178, 195);
-    color: white;
+    color: rgb(12, 9, 9);
     text-align: right;
     width: 100%;
     height: 80px;
-    font-size: 25px;
+    font-size: 30px;
     outline: none;
-    border: none;
+    border: 3px solid white;
+    border-radius: 25%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 button:hover {
     background-color: rgb(228, 21, 55);
+    color: white;
 }
 button:active {
     background-color: rgb(241, 79, 106);
 }
-
+.operator:hover {
+    color: white;
+    background-color:rgb(228, 21, 55)
+}
 
